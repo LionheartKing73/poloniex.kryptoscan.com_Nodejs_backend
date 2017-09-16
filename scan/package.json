@@ -1,0 +1,29 @@
+{
+	"name": "scan-server",
+	"version": "1.0.0",
+	"description": "",
+	"main": "scanServer.js",
+	"scripts": {
+		"start": "babel-watch src/scanServer.js",
+		"build": "rimraf dist/ && babel src -d dist --copy-files",
+		"serve": "node dist/scanServer.js"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"async": "^2.5.0",
+		"autobahn": "^17.5.2",
+		"ejs": "^2.5.7",
+		"express": "^4.15.3",
+		"mongodb": "^2.2.30",
+		"node-schedule": "^1.2.3",
+		"socket.io": "^2.0.3"
+	},
+	"devDependencies": {
+		"babel-cli": "^6.24.1",
+		"babel-preset-es2015": "^6.24.1",
+		"babel-preset-stage-2": "^6.24.1",
+		"babel-watch": "^2.0.7",
+		"rimraf": "^2.6.1"
+	}
+}

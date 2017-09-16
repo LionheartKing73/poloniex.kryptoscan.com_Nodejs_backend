@@ -1,0 +1,32 @@
+{
+	"name": "data-server",
+	"version": "1.0.0",
+	"main": "dataServer.js",
+	"scripts": {
+		"start": "babel-watch src/dataServer.js",
+		"cleardb": "node database/createdb.js && node database/cleardb.js && node database/createdb.js",
+		"build": "rimraf dist/ && babel src -d dist --copy-files",
+		"serve": "node dist/dataServer.js"
+	},
+	"license": "ISC",
+	"dependencies": {
+		"async": "^2.5.0",
+		"autobahn": "^17.5.2",
+		"bluebird": "^3.3.4",
+		"body-parser": "~1.13.2",
+		"debug": "~2.2.0",
+		"express": "~4.13.1",
+		"mongodb": "^2.2.30",
+		"morgan": "~1.6.1",
+		"node-schedule": "^1.2.3",
+		"socket.io": "^2.0.3",
+		"socket.io-client": "^2.0.3"
+	},
+	"devDependencies": {
+		"babel-cli": "^6.24.1",
+		"babel-preset-es2015": "^6.24.1",
+		"babel-preset-stage-2": "^6.24.1",
+		"babel-watch": "^2.0.7",
+		"rimraf": "^2.6.1"
+	}
+}

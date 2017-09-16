@@ -1,0 +1,175 @@
+<html lang="en">
+<% include ../common/head %>
+<script src="js/scan_2.js"></script>
+<body>	
+	<div class="container-fluid">
+		<div class="top_nav">
+			<div class="nav_title">
+				<div class="left">
+					<i class="fa fa-user-circle-o" aria-hidden="true"></i>
+					<span>Kryptoscan coming soon!</span>
+				</div>
+				<div class="right">
+					<span>VERSION 1.0</span>
+				</div>
+			</div>
+			<div class="nav_body">
+				<div class="page_title">
+					<a href="/"><img src="/images/home-icon.png" width="30" height="30"></a>
+					<span>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</span>
+					<span>scan 2(left side is up scan, right side is down scan)</span>
+				</div>
+				<div class="logo">
+					<a href="/"><img src="/images/logo1.png"></a>
+				</div>
+			</div>
+		</div>
+		<div class="navbar-fixed-left">
+			<div class="top">
+				<div class="menu_item"><a data-toggle="tab" href="#min_5" class="actived">
+					<h4 class="scan_1_sort">5M</h4>
+					<span>5 min scan</span>
+				</a></div>
+				<div class="menu_item"><a data-toggle="tab" href="#min_15">
+					<h4 class="scan_1_sort">15</h4>
+					<span>15 min scan</span>
+				</a></div>
+				<div class="menu_item"><a data-toggle="tab" href="#min_30">
+					<h4 class="scan_1_sort">30</h4>
+					<span>30 min scan</span>
+				</a></div>
+				<div class="menu_item"><a data-toggle="tab" href="#min_60">
+					<h4 class="scan_1_sort">1H</h4>
+					<span>1 hour scan</span>
+				</a></div>
+				<div class="menu_item"><a data-toggle="tab" href="#min_120">
+					<h4 class="scan_1_sort">2H</h4>
+					<span>2 hour scan</span>
+				</a></div>
+				<div class="menu_item"><a data-toggle="tab" href="#min_240">
+					<h4 class="scan_1_sort">4H</h4>
+					<span>4 hour scan</span>
+				</a></div>
+				<div class="menu_item"><a data-toggle="tab" href="#min_1440">
+					<h4 class="scan_1_sort">1D</h4>
+					<span>1 day scan</span>
+				</a></div>
+				<div class="menu_item"><a data-toggle="tab" href="#min_10080">
+					<h4 class="scan_1_sort">1W</h4>
+					<span>1 week scan</span>
+				</a></div>
+
+				<div class="menu_item"><a data-toggle="tab" href="#min_43200">
+					<h4 class="scan_1_sort">1M</h4>
+					<span>1 month scan</span>
+				</a></div>
+			</div>
+			<div class="bottom">
+				<% include ../partials/menu_buttons %>
+			</div>
+		</div>
+
+		<div class="tab-content">
+			<div id="min_5" class="tab-pane fade in active">
+				<div class="title">
+					5 min scan
+				</div>
+				<div class="col-md-6">
+					<ul class="alert_list" id="min_5_list_up"></ul>
+				</div>
+				<div class="col-md-6">
+					<ul class="alert_list" id="min_5_list_down"></ul>
+				</div>
+			</div>
+			<div id="min_15" class="tab-pane fade">
+				<div class="title">
+					15 min scan
+				</div>
+				<div class="col-md-6">
+					<ul class="alert_list" id="min_15_list_up"></ul>
+				</div>
+				<div class="col-md-6">
+					<ul class="alert_list" id="min_15_list_down"></ul>
+				</div>
+			</div>
+			<div id="min_30" class="tab-pane fade">
+				<div class="title">
+					30 min scan
+				</div>
+				<div class="col-md-6">
+					<ul class="alert_list" id="min_30_list_up"></ul>
+				</div>
+				<div class="col-md-6">
+					<ul class="alert_list" id="min_30_list_down"></ul>
+				</div>
+			</div>
+			<div id="min_60" class="tab-pane fade">
+				<div class="title">
+					1 hour scan
+				</div>
+				<div class="col-md-6">
+					<ul class="alert_list" id="min_60_list_up"></ul>
+				</div>
+				<div class="col-md-6">
+					<ul class="alert_list" id="min_60_list_down"></ul>
+				</div>
+			</div>
+			<div id="min_120" class="tab-pane fade">
+				<div class="title">
+					2 hour scan
+				</div>
+				<div class="col-md-6">
+					<ul class="alert_list" id="min_120_list_up"></ul>
+				</div>
+				<div class="col-md-6">
+					<ul class="alert_list" id="min_120_list_down"></ul>
+				</div>
+			</div>
+			<div id="min_240" class="tab-pane fade">
+				<div class="title">
+					4 hour scan
+				</div>
+				<div class="col-md-6">
+					<ul class="alert_list" id="min_240_list_up"></ul>
+				</div>
+				<div class="col-md-6">
+					<ul class="alert_list" id="min_240_list_down"></ul>
+				</div>
+			</div>
+			<div id="min_1440" class="tab-pane fade">
+				<div class="title">
+					1 day scan
+				</div>
+				<div class="col-md-6">
+					<ul class="alert_list" id="min_1440_list_up"></ul>
+				</div>
+				<div class="col-md-6">
+					<ul class="alert_list" id="min_1440_list_down"></ul>
+				</div>
+			</div>
+			<div id="min_10080" class="tab-pane fade">
+				<div class="title">
+					1 week scan
+				</div>
+				<div class="col-md-6">
+					<ul class="alert_list" id="min_10080_list_up"></ul>
+				</div>
+				<div class="col-md-6">
+					<ul class="alert_list" id="min_10080_list_down"></ul>
+				</div>
+			</div>
+			<div id="min_43200" class="tab-pane fade">
+				<div class="title">
+					1 month scan
+				</div>
+				<div class="col-md-6">
+					<ul class="alert_list" id="min_43200_list_up"></ul>
+				</div>
+				<div class="col-md-6">
+					<ul class="alert_list" id="min_43200_list_down"></ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

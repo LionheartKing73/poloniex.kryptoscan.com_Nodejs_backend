@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700');
+
+body{
+	font-family: 'Titillium Web', sans-serif;
+	padding: 100px 20px 20px 80px;
+	background: #d9d9d9;
+}
+
+.navbar-fixed-left {
+	position: fixed;
+	height: 100%;
+	width: 60px;
+	background: white;
+	left: 0;
+	top: 0;
+	padding: 100px 0px 20px;
+	box-shadow: 3px 0px 5px 0px #999;
+	border-radius: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	overflow: hidden;
+	-webkit-transition:width .1s linear;
+	transition:width .1s linear;
+	-webkit-transform:translateZ(0) scale(1,1);
+	z-index: 100;
+	min-height: 600px;
+}
+.navbar-fixed-left:hover{
+	width: 250px;
+}
+
+.navbar-fixed-left > div {
+    display: flex;
+	flex-direction: column;
+}
+.menu_item {
+	padding: 10px 15px;
+	white-space: nowrap;
+	font-size: 14px;
+}
+.menu_item:hover {
+	background: #6cc5ed;
+	cursor: pointer;
+}
+.menu_item img{
+	margin-right: 20px;
+}
+.menu_item h4{
+	margin: 0 20px 0 5px;
+	font-weight: 700;
+}
+.navbar-fixed-left a {
+	color: black;
+	text-decoration: none;
+	opacity: 0.3;
+	display: flex;
+	align-items: center;
+}
+.actived{
+	opacity: 1 !important;
+}
+.logout{
+	margin-top: 50px;
+}
+.container-fluid{
+	padding: 15px;
+	margin: 0px;
+	background: #cccccc;
+    border-radius: 5px;
+}
+
+.top_nav{
+	height: 80px;
+	width: 100%;
+	background: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	box-shadow: 0 8px 6px -6px #999;
+	z-index: 200;
+}
+.nav_title{
+	padding: 0px 10px;
+	background: #395288;
+	height: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 12px;
+}
+.nav_title .left{
+	color: #89ffb4;
+}
+.nav_title .right{
+	color: white;
+}
+.nav_body{
+	padding: 5px 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.page_title{
+	font-size: 20px;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+}
+.logo img{
+	height: 50px;
+	width: auto;
+	cursor: pointer;
+}
+.scan_list_menu{
+	font-size: 40px;
+	font-weight: 400;
+	color: white;
+	text-shadow: 4px 4px 3px #aaaaaa;
+}
+.tab-content .title{
+	font-size: 40px;
+	font-weight: 400;
+	color: white;
+	text-shadow: 4px 4px 3px #aaaaaa;
+}
+.alert_list li{
+	font-size: 16px;
+    font-family: initial;
+}
+
+/*scan2 style*/
+.tab-content .col-md-6{
+	overflow-x: scroll;
+}

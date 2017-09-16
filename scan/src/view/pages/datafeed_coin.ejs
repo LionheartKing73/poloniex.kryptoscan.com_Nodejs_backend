@@ -1,0 +1,53 @@
+<html lang="en">
+<% include ../common/head %>
+<body>
+	<div class="container-fluid">
+		<div class="top_nav">
+			<div class="nav_title">
+				<div class="left">
+					<i class="fa fa-user-circle-o" aria-hidden="true"></i>
+					<span>Kryptoscan coming soon!</span>
+				</div>
+				<div class="right">
+					<span>VERSION 1.0</span>
+				</div>
+			</div>
+			<div class="nav_body">
+				<div class="page_title">
+					<a href="/"><img src="/images/home-icon.png" width="30" height="30"></a>
+					<span>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</span>
+					<a href="/datafeed_integration"><span>datafeed_integration</span></a>
+					<span>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</span>
+					<span><%= coin %></span>
+				</div>
+				<div class="logo">
+					<a href="/"><img src="/images/logo1.png"></a>
+				</div>
+			</div>
+		</div>
+		<div class="navbar-fixed-left">
+			<div class="top">
+				
+			</div>
+			<div class="bottom">
+				<% include ../partials/menu_buttons %>
+			</div>
+		</div>
+
+		<div class="tab-content">
+			<div class="title">
+				<%= coin %>
+			</div>
+			<ul class="alert_list" id="datafeed_coin"></ul>
+		</div>
+	</div>
+<script type="text/javascript">
+	var socket = io();
+
+	socket.on("<%= coin %>", function(msg){
+		$('#datafeed_coin').append($('<li>').text(JSON.stringify(msg)));
+		window.scrollTo(0, document.body.scrollHeight);
+	});
+</script>
+</body>
+</html>
